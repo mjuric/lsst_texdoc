@@ -1,7 +1,0 @@
-\beamer@endinputifotherversion {3.26pt}
-\beamer@sectionintoc {1}{Initial Set up}{3}{0}{1}
-\beamer@sectionintoc {2}{Standards and Tools}{7}{0}{2}
-\beamer@sectionintoc {3}{Management}{19}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{32}{0}{4}
-\beamer@sectionintoc {5}{Acronyms}{36}{1}{5}
-\beamer@sectionintoc {6}{References}{39}{1}{6}
