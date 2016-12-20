@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tn_template.aux
+The style file: gaia_aa.bst
+Database file #1: gaia_livelink_valid.bib
+Database file #2: books.bib
+Database file #3: refs_ads.bib
+Warning--I didn't find a database entry for "LL:AUTH-XXX"
+Warning--I didn't find a database entry for "omu01"
+You've used 2 entries,
+            2766 wiz_defined-function locations,
+            1012 strings with 8989 characters,
+and the built_in function-call counts, 930 in all, are:
+= -- 63
+> -- 55
+< -- 1
++ -- 26
+- -- 15
+* -- 81
+:= -- 133
+add.period$ -- 0
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 2
+cite$ -- 6
+duplicate$ -- 65
+empty$ -- 63
+format.name$ -- 19
+if$ -- 178
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 17
+newline$ -- 13
+num.names$ -- 8
+pop$ -- 39
+preamble$ -- 1
+purify$ -- 8
+quote$ -- 0
+skip$ -- 33
+stack$ -- 0
+substring$ -- 6
+swap$ -- 32
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 18
+warning$ -- 0
+while$ -- 6
+width$ -- 0
+write$ -- 30
+(There were 2 warnings)

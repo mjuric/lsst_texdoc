@@ -1,0 +1,76 @@
+\documentclass[DM,TN]{lsstdoc}
+
+
+\begin{document}
+
+%example of how to add your local logo - the file must appear in your texinputs
+%\setDocLocalLogo{local_logo}
+
+\setDocCompact{true}
+
+\setDocTitle[Topic Short Title]{ Issue/topic not starting with 'LSST' nor 'a','the' }
+\setDocAbstract{This Note is about the important topic.}
+\setDocDate{\today}
+\setDocApprove{}
+\setDocIssue{0D}   % 'D' for draft, change to number 1 when submitted to Livelink
+\setDocRevision{0}
+\setDocRef{L\CU-NUM-\docIssue}
+\setDocStatus{Draft}  % change to "Issued" once submitted Livelink
+\setDocAuthor{ Author1, Author2, etc. }
+\setDocAffil{My institute }   %optional field
+%\setLSSTDU{DUy} % optional
+
+\mktitle
+
+% TN may not need a doc history ... comment in/out as wished  MOST RECENT FIRST
+%\begin{docHistory}
+%\addtohist{1}{0}{yyyy-mm-dd}{AUTH}{Creation}
+%\end{docHistory}
+%
+%\newpage   % uncomment if you want the doc history on a separate page
+
+% comment if you do not want a TOC
+\tableofcontents
+\newpage
+
+\section{Introduction \label{sect:intro}}
+This is the most basic template for a technical note.
+
+\subsection{Objectives \label{sect:objectives}}
+What is the context and motivation for this technical note.
+
+\subsection{Applicable Documents \label{sect:ad}}
+When applicable documents change a change may be required in this document.
+The applicable documents are listed here for clarity - the full reference is
+below in \secref{sect:refs}. This should be a relatively short list in most
+cases, and for technical notes may not be needed at all.
+
+\begin{tabular}[htb]{l l}
+\citell{LL:WOM-018}&    DPAC Software System Specification \\
+\citell{LL:AUTH-XXX}&   Software Development Plan for \CU  \\
+% Don't refer to AD1 etc below just use the \citel
+\end{tabular}
+
+\subsection{References\label{sect:refs}} \vspace*{-1cm}
+\renewcommand{\refname}{}
+\bibliographystyle{gaia_aa}
+\bibliography{gaia_livelink_valid,books,refs_ads}
+
+Note the use of gaia\_aa for the bib style. This allows the use of citell in
+place of cite for livelink docs using this put the DOC code as the ref
+rather than a number or author/year e.g. \citell{LL:WOM-011}. Other paper
+citations should just use cite and will come out AA style e,g, \cite{2001ASPC..225..201O}.
+
+\subsection{Definitions \label{sect:definition}}
+
+\subsection{Acronyms \label{sect:acronyms}}
+The following is a complete list of acronyms used in this document.
+% Use the acronym tool from CU1 to generate acronym list for your doc.
+\input{acronyms}
+
+
+\section{The rest of the document \label{sect:sec1}}
+
+\input{eqt}
+
+\end{document}

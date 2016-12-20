@@ -1,0 +1,88 @@
+\begin{thebibliography}{15}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{ #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Bastian({BAS-003})}]{LL:BAS-003}
+\textbf{[{BAS-003}]}, Bastian, U., 2007,  {\em {R}eference systems, conventions
+  and notations for {G}aia}, \\ \texttt{ GAIA-CA-SP-ARI-BAS-003},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/358698}
+
+\bibitem[{{Comoretto} et~al.(2012){Comoretto}, {Gallegos}, {Els}
+  et~al.}]{2012SPIE.8449E..0GC}
+{Comoretto}, G., {Gallegos}, J., {Els}, S., et~al., 2012, In: Society of
+  Photo-Optical Instrumentation Engineers (SPIE) Conference Series, vol. 8449
+  of Society of Photo-Optical Instrumentation Engineers (SPIE) Conference
+  Series, \href{http://adsabs.harvard.edu/abs/2012SPIE.8449E..0GC}{ADS Link}
+
+\bibitem[{{de Bruijne} et~al.(2005){de Bruijne}, {Lammers}, \&
+  {Perryman}}]{2005ESASP.576...67D}
+{de Bruijne}, J.H.J., {Lammers}, U., {Perryman}, M.A.C., 2005, In: {C.~Turon,
+  K.~S.~O'Flaherty, \& M.~A.~C.~Perryman} (ed.) The Three-Dimensional Universe
+  with Gaia, vol. 576 of ESA Special Publication, 67--+,
+  \href{http://adsabs.harvard.edu/abs/2005ESASP.576...67D}{ADS Link}
+
+\bibitem[{Drimmel et~al.({RD-010})Drimmel, Els, O'Mullane et~al.}]{LL:RD-010}
+\textbf{[{RD-010}]}, Drimmel, R., Els, S., O'Mullane, W., et~al., 2014,  {\em
+  {D}{P}{A}{C} {P}roject {D}evelopment {P}lan}, \\ \texttt{
+  GAIA-CD-PL-INAF-RD-010},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/2786669}
+
+\bibitem[{{GAIA~Science~Advisory~Group}({ESA-SCI(2000)4})}]{LL:ESA-SCI(2000)4}
+\textbf{[{ESA-SCI(2000)4}]}, {GAIA~Science~Advisory~Group}, 2000,  {\em
+  {G}{A}{I}{A}. {C}omposition, {F}ormation and {E}volution of the {G}alaxy
+  [{T}he {G}{A}{I}{A} {S}tudy {R}eport ({E}{S}{A}-{S}{C}{I}(2000)4)]}, \\
+  \texttt{ ESA-SCI(2000)4},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/359232}
+
+\bibitem[{Handy(1993)}]{handy1993understanding}
+Handy, C., 1993,  {\em Understanding organizations}, Penguin Books, London,
+  England New York, N.Y., USA
+
+\bibitem[{Hernandez({JH-001})}]{LL:JH-001}
+\textbf{[{JH-001}]}, Hernandez, J., 2014,  {\em {M}ain {D}atabase {I}nterface
+  {C}ontrol {D}ocument}, \\ \texttt{ GAIA-C1-SP-ESAC-JH-001},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/2786145}
+
+\bibitem[{Innocente({VI-001})}]{LL:VI-001}
+\textbf{[{VI-001}]}, Innocente, V., 2007,  {\em {E}xternal review report for
+  {G}aia {S}{O}{C}/{D}{P}{A}{C} {S}{R}{R}}, \\ \texttt{ VI-001},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/2803649}
+
+\bibitem[{Innocente({VI-002})}]{LL:VI-002}
+\textbf{[{VI-002}]}, Innocente, V., 2009,  {\em {E}xternal review report for
+  {G}aia {S}{O}{C}/{D}{P}{A}{C} {D}{R}}, \\ \texttt{ VI-002},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/2905956}
+
+\bibitem[{O'Mullane({WOM-003})}]{LL:WOM-003}
+\textbf{[{WOM-003}]}, O'Mullane, W., 2005,  {\em {L}arge scientific data
+  systems - analysis of some existing projects and their applicability to
+  {G}aia}, \\ \texttt{ GAIA-C1-TN-ESAC-WOM-003},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/497678}
+
+\bibitem[{O'Mullane({WOM-019})}]{LL:WOM-019}
+\textbf{[{WOM-019}]}, O'Mullane, W., 2007,  {\em {C}{U}1 {P}rogress {R}eport
+  \#1}, \\ \texttt{ GAIA-C1-PR-ESAC-WOM-019},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/2803205}
+
+\bibitem[{O'Mullane \& Lammers({WOM-001})}]{LL:WOM-001}
+\textbf{[{WOM-001}]}, O'Mullane, W., Lammers, U., 2007,  {\em {W}ork breakdown
+  structures for {D}{P}{A}{C}}, \\ \texttt{ GAIA-C1-TN-ESAC-WOM-001},
+  \newline\urlprefix\url{http://www.rssd.esa.int/cs/livelink/open/497865}
+
+\bibitem[{{O'Mullane} \& {Lindegren}(1999)}]{1999BaltA...8...57O}
+{O'Mullane}, W., {Lindegren}, L., 1999, Baltic Astronomy, 8, 57,
+  \href{http://adsabs.harvard.edu/abs/1999BaltA...8...57O}{ADS Link}
+
+\bibitem[{{O'Mullane} et~al.(2011){O'Mullane}, {Luri}, {Parsons}
+  et~al.}]{2011arXiv1108.0355O}
+{O'Mullane}, W., {Luri}, X., {Parsons}, P., et~al., 2011, ArXiv e-prints,
+  \href{http://adsabs.harvard.edu/abs/2011arXiv1108.0355O}{ADS Link}
+
+\bibitem[{Perryman(2010)}]{Perryman2010}
+Perryman, A., 2010,  {\em The Making of History's Greatest Star Map},
+  Astronomers' universe, Springer,
+  \newline\urlprefix\url{http://books.google.es/books?id=P-5pZ8GNuPIC}
+
+\end{thebibliography}

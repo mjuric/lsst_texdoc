@@ -1,0 +1,7 @@
+FIRST SET TEXMFLOCAL OT THE BE TEXMF DIRECTORY.. 
+e.g. (best add to .bashrc or equivalent)
+export TEXMFLOCAL=/Users/womullan/otherdocs/LSST/TEXDOC/texmf
+
+
+then run the TEXMF setup (only needed once or when new things are added)
+mktexlsr

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: WOM_GAIA_GBU.aux
+The style file: gaia_aa.bst
+Database file #1: gaia_livelink_valid.bib
+Database file #2: gaia_refs.bib
+Database file #3: gaia_books.bib
+Database file #4: gaia_refs_ads.bib
+You've used 15 entries,
+            2766 wiz_defined-function locations,
+            1113 strings with 11818 characters,
+and the built_in function-call counts, 6334 in all, are:
+= -- 421
+> -- 310
+< -- 13
++ -- 139
+- -- 85
+* -- 521
+:= -- 884
+add.period$ -- 0
+call.type$ -- 15
+change.case$ -- 59
+chr.to.int$ -- 15
+cite$ -- 45
+duplicate$ -- 491
+empty$ -- 514
+format.name$ -- 116
+if$ -- 1257
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 117
+newline$ -- 52
+num.names$ -- 62
+pop$ -- 247
+preamble$ -- 1
+purify$ -- 55
+quote$ -- 0
+skip$ -- 254
+stack$ -- 0
+substring$ -- 69
+swap$ -- 230
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 129
+warning$ -- 0
+while$ -- 49
+width$ -- 0
+write$ -- 180
