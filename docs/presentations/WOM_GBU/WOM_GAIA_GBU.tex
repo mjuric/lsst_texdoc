@@ -1,0 +1,73 @@
+
+\PassOptionsToPackage{table}{xcolor}
+
+\documentclass{gaiasocbeamer}
+
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{calc}
+\usepackage{movie15}
+
+%
+% Empty frame environment: useful for page-filling images.
+%
+% argument is frame title
+%
+\newenvironment{emptyframe}[1]{%
+\begin{frame}[plain]
+  \hypertarget<1>{#1}{}
+  \only<1>{\pdfbookmark[2]{#1}{#1}}}%
+{\end{frame}}
+
+
+
+% ----------------------
+
+
+%\usepackage{pdfpages}
+\input{pre}
+
+\title[Gaia GBU]{Building the Gaia ground segment\ {\small revisited }}
+
+
+\date[10/01/2017]{ January 10$^{\text{th}}$  2017, LSST Tucson}
+
+
+% ----------------------
+
+
+\begin{document}
+\frame{\titlepage}
+\frame{\frametitle{what did and did not work ..} 
+\begin{center}
+Or \\
+\huge
+{\color{green}the good} \\
+{\color{red} the bad} \\
+and \\
+{\color{blue}the ugly}.
+\end{center}
+\normalsize
+The western is quintessentially  American, that one was Italian though and it was shot in Spain.
+
+}
+
+\input{body}
+
+ \appendix
+\section {Acronyms}\label{sect:acr}
+
+\frame[allowframebreaks]{\frametitle{Acronyms}
+\tiny
+\input {./acronyms}
+}
+
+\section {References}\label{sect:ref}
+\frame[allowframebreaks]{\frametitle{ References }
+\tiny
+\bibliographystyle{gaia_aa}
+\bibliography{gaia_livelink_valid,gaia_refs,gaia_books,gaia_refs_ads}
+\normalsize
+
+}
+\end{document}

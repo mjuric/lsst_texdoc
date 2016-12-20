@@ -1,0 +1,26 @@
+
+\author[William O'Mullane]{William O'Mullane }
+
+
+\institute[European Space Agency]{Gaia Science Operations Centre\\European Space Astronomy Centre\\European Space Agency}
+% ----------------------
+
+
+\AtBeginSection[]  % "Beamer, do the following at the start of every section"
+{
+\begin{frame}<beamer>
+\addtocounter{framenumber}{-1}
+\frametitle{Outline} % make a frame titled "Outline"
+\tableofcontents[currentsection]  % show TOC and highlight current section
+\end{frame}
+}
+
+
+\AtBeginSubsection[]
+{
+   \begin{frame}
+\addtocounter{framenumber}{-1}
+       \frametitle{Outline}
+       \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+}
