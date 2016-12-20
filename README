@@ -1,9 +1,12 @@
-Basic Usage
-===========
+LaTeX Templates for LSST Documents
+==================================
 
-Follow the instructions in the Setting Up section to make the contents of
-this package known to LaTeX. Once you do so, two new document classess
-should become available:
+Usage
+-----
+
+Follow the instructions in the [Setting Up](#setting-up) section to make the
+contents of this package known to LaTeX.  Once you do so, two new document
+classess should become available:
 
     \documentclass{lsstbeamer}
     \documentclass{lsstdoc}
@@ -15,13 +18,15 @@ Note that you'll most likely have to use `pdflatex`:
 , as some (older?) versions of `latex` do not recognize PNG images included
 with these templates.
 
-Templates
-=========
 
-* *** WIL -- PLEASE FILL THIS IN WITH WHAT'S AVAILABLE WRT DOCUMENT TEMPLATES ***
+Available templates
+-------------------
+
+    *** WIL -- PLEASE FILL THIS IN WITH WHAT'S AVAILABLE WRT DOCUMENT TEMPLATES ***
+
 
 Setting Up
-==========
+----------
 
 If you're using EUPS, simply `setup` this product. For example:
 
@@ -35,8 +40,9 @@ assuming you're in the top-level directory of the product (the same
 directory this file is in). You can also add this to your `.bashrc` or
 equivalent.
 
+
 Modifying
-=========
+---------
 
 First, follow the instructions in the Setting Up section to make the contents of
 this package known to LaTeX.
