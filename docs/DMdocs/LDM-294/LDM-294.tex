@@ -1,0 +1,62 @@
+\documentclass[DM,lsstdraft,SDP]{lsstdoc}
+%Replace the CUx here and all \CU will resolve below.
+
+\usepackage{gwp}
+\usepackage{risk}
+
+\begin{document}
+
+\setDocTitle    [DM Charter\CU]
+                    {\color[rgb]{0.16,0.42,0.57} \sf Data Management Organization Charter 
+                    }
+\setDocAuthor   {William O'Mullane, Marion Juric, Jeffrey P Kantor,  Tim Axelrod,  Roberta Allsman}                % the author(s) \setDocApprove  {LSST Project Oeefice}              % approval by ...
+\setDocRef      {LDM-294} % the reference code
+\setDocIssue    {2}                        % the issue
+\setDocRevision {1}                        % the revision
+\setDocDate     {\today}              % the date of the issue
+\setDocStatus   {draft}                    % the document status
+
+%
+% a short abstract
+%
+\setDocAbstract {This is the DM plan updaed from the v2 of 2014.
+   It covers the organisation anfd managemnt of DM for LSST.}
+
+\setDocCompact{true}
+
+%
+% the title page
+%
+\mktitle
+
+%
+%   Revision history
+%
+% MOST RECENT FIRST
+\begin{docHistory}
+\addtohist{2}{1}{2017-01-09}{WOM,MJ}{Update in TeX}
+\addtohist{2}{0}{2015-03-11}{JK}{Updated with new RFC process, realignment of TCT, SAT, DMLT - other versions in between}
+\addtohist{1}{1}{2004-06-23}{JK}{Initial version} 
+\end{docHistory}
+
+%
+%   TOC
+%
+\newpage
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+
+%
+% It's all yours from here on
+%
+\input{intro}
+\input{dmorg}
+\input{probman}
+\input{positions}
+
+\appendix
+\input{DDMP}
+\input{precon}
+\input{refs}
+\end{document}
