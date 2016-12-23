@@ -1,4 +1,4 @@
-#python
+#!/usr/bin/env python
 #Take gaia tex file and put in lsst ..
 import os
 import sys
