@@ -1,0 +1,47 @@
+%\PassOptionsToClass{presentation}{beamer}
+
+\documentclass{lsstbeamer}
+\usepackage{longtable}
+
+% ----------------------
+
+%\setbeamercovered{dynamic}
+
+\title[Gaia Ops]{ Gaia :moving to operaitons  }
+
+\author[W. O'Mullane ]{William O'Mullane }
+
+\date[ 11/01/2017]{Jan  11$^{th}$ 2017 DMLT Tucson}
+
+\institute[LSST Corporation]{LSST\\Tucson\\Arizona}
+% ----------------------
+
+
+\AtBeginSection[]  % "Beamer, do the following at the start of every section"
+{
+\begin{frame}<beamer>
+\frametitle{Outline} % make a frame titled "Outline"
+\tableofcontents[currentsection]  % show TOC and highlight current section
+\end{frame}
+}
+
+
+\AtBeginSubsection[]
+{
+   \begin{frame}
+       \frametitle{Outline}
+       \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+}
+
+
+
+
+\begin{document}
+\frame[plain]{\titlepage}
+
+\input{body}
+\input{conc}
+\appendix
+\input{bib}
+\end{document}
