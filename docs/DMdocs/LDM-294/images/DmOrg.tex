@@ -61,13 +61,14 @@ textwidth=30cm,textheight=50mm]{geometry}
                 Systems Engineering
                 \nodepart{second} \vspace{48mm}
                 };
-    \node (man) [mbox, below=6mm of syseng.north, text width=32mm] {\textbf{ Manager }\\ W. O'Mullane };
+    \node (man) [mbox, below=6mm of syseng.north, text width=32mm] {\textbf{ Manager }\\ William O'Mullane };
     \node (pipe) [psbox, below=1mm of man, text width=32mm] {\textbf{ Pipeline Scientist}\\ Robert Lupton };
-    \node (sysengineer) [mbox, below=1mm of pipe, text width=32mm] {\textbf{ System Engineer}\\ Tim Jenesse };
+    \node (sysengineer) [mbox, below=1mm of pipe, text width=32mm] {\textbf{ System Engineer}\\ Tim Jenness };
     \node (softarc) [mbox, below=1mm of sysengineer, text width=32mm] {\textbf{ Software Architect}\\ Kian Tat Lim };
     \node (sysarc) [mbox, below=1mm of softarc, text width=32mm] {\textbf{ System Architect}\\ Don Petravick  };
 %%%% end SYSENG
 
+    \node (pcon) [mbox, right=3.1cm of udmpm.north , text width=45mm] {\textbf{Project Control/Scheduler }\\ Kevin Long?};
     %\node (al) [below=69mm of dmpm, text width=0mm]{};
     \dmnode[below=55mm of dmpm]{suit}{SUIT} {Xiuqin Wu  }{ David Ciardi } ;
     \dmnode[left=2mm of suit]{das}{Data Access Services}{Fritz Mueller}{Sys Eng? Mario?}  ;
@@ -92,6 +93,7 @@ textwidth=30cm,textheight=50mm]{geometry}
    \draw[line] (lhn.north) -- ++(0,0.3) -| (dmpm.south);
 
    \draw[line] (syseng.east) to (udmpm.north);
+   \draw[line] (pcon.west) to (udmpm.north);
 %science
    \draw[sline] (ps.west) to (pm.east);
    \draw[sline] (dmps.west) to (dmpm.east);
