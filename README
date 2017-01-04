@@ -23,6 +23,7 @@ Available templates
 -------------------
 	tn_template.tex    - basic technical note
 	plan_template.tex  - detailed plan with all suggested sections
+	presentation.tex   - using lsstbeamer.cls for LSST themed presentaiton
 
 
 Setting Up
@@ -53,3 +54,8 @@ running:
     mktexlsr
 
 before attempting to use.
+
+Documents
+---------
+For now some docuemnts and presentations are also in this repo under docs. 
+
