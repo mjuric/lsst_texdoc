@@ -96,16 +96,7 @@
 \end{itemize}
 }
 
-\frame {
-  \frametitle{  Flight Operations Procedures in MOC}
-\vspace{-0.5cm}
-\begin{center}	
-   \includegraphics[width=0.6\textwidth,trim=0cm 0cm 0cm 0cm]{images/fops}\\
-\end{center}
-\vspace{-15pt}
-The FOP is followed by the spacecraft operators - the paper copy is just in case the computers fail - could be useful! 
-{\color{red} But we should avoid {\em write only} documents.}
-}
+\input{wod} 
 
 \frame {\frametitle{ Have a standard: DPAC follows ECSS }
 \begin{columns}
@@ -134,41 +125,6 @@ The FOP is followed by the spacecraft operators - the paper copy is just in case
 \end{columns}
 }
 
-\frame {\frametitle{  LSST  DM docs } 
-
-\begin{itemize}
-  \item  No standard - no Overview  of DM docs I could find  some web pages 
-\begin{itemize}
-  \item LDM-493 .. covers some aspects .. but still no Doctree - templates ?
-  \item not nice to have tex/markdown/word others ?   Markdown ok for implementation docs but for technotes for science notes?  
-   \item did not find a document management plan for DM .. 
-\end{itemize}
-  \item Mention made of LPM-051 .. but is DM following this ? Or just not declaring controlled documents .. prefer term ISSUED rather than controlled
-	\begin{itemize}
-
-   \item docushare  is the LSST repo but DM docs seem old (did find some from KT) - should all issued docs be there (I think so ..)
-	\item would expect to find all Technotes from DM in docushare .. like in a technotes folder ... SQR-006 gives an API which I may be able to use - should not be this hard.
-	\end{itemize}
-\item would like to find all draft docs in one DM repo .. 
-    \item everything is {\em referenceable} - but I do not find a single bibtex database or such for issued docs ..  (Gaia livelink metadata is exported as a bibtex every night) 
-\end{itemize}
-}
-\frame {\frametitle{  LSST  DM docs } 
-\begin{itemize}
-  \item  LDTN-030 - ok for code documentation -  understand its evolving- 
-	\begin{itemize}
-	\item overlaps LDM-493 somewhat - Why so many documentation projects - should we have ONE for DM ?
-	\item Provides document shards - no structure - how do you get a an old version (users will not get from git) .. LTD perhaps - but not well explained.
-	\item All products should be listed and for each product the set of docs .. the Audience seems too broad to cover with one type of document.
-	
-	\item This "In our case, the situation is complicated by the fact that Data Management software is being built by multiple teams across many coupled repositories. Taken together, the software repositories of the Data Management System are typically called the Stack, but not all parts of the Stack are used together. There are server-side database and display components, as well as pipelines algorithms bound together with middle ware." {\color{red} does not sound like good system engineering is in place .. }
-	\item Unclear in a massive web how one  can check consistency to any given level for docs .. {\color{red} Potential  problem for reviewers}
-	\end{itemize}
-\end{itemize}
-  
-}
-
-
 
 \frame {\frametitle{ Single Sign on  Gaia Portal } 
 \begin{itemize}
@@ -191,6 +147,7 @@ The FOP is followed by the spacecraft operators - the paper copy is just in case
 }
 
 \frame{\frametitle{Development tools}
+\vspace{-8pt}
 \begin{itemize}
   \item All DPAC code and docs in Subversion, hosted at ESAC 
     \begin{itemize}
@@ -211,13 +168,13 @@ The FOP is followed by the spacecraft operators - the paper copy is just in case
         \begin{itemize}
           \item {\color{red} The set of routines were not defined hence GaiaTools is a bit of
           hodgepodge mess\ldots}
-          \item {\color{blue} Counter argument for common tools is (unnecessary)
-          interdependence\ldots}
+          \item {\color{blue} Counter argument for common tools is (unnecessary) 
+          interdependence\ldots} 
         \end{itemize}
-      \item all libs in Nexus 
+      \item all libs in Nexus  - builds against these {\color{green}no full builds}
       \item builds with Ant; {\color{red} Maven might be the thing to use now}
       \item automated builds with Hudson/Jenkins (previously cruisecontrol)
-      \item {\color{blue} virtual machines make some reasons for Java invalid}
+      \item {\color{blue} virtual machines make some reasons for Java invalid} - LSST not ?
     \end{itemize}
 \end{itemize}
 }
