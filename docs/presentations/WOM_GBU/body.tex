@@ -41,7 +41,7 @@
   \item Interviewed several project leaders for \cite{LL:WOM-003} in 2004/5 --- tried to learn from
     them \ldots
     \begin{itemize}
-      \item Included LSST (Kantor) 
+      \item Included LSST (Kantor) , SDSS (Borowski)
   \item Management came out as the most difficult part of all projects \ldots so I will leave that until last.
     \end{itemize}
   \item some things started before DPAC --- simulations and GIS studies for example.
@@ -89,7 +89,7 @@
           \item good for astronomers --- computer people find it harder to handle 
         \end{itemize}
       \item from it we generate data instance classes and schemas for storage.
-      \item {\color{green} ONLY data model not processing} --- all objects are dumb
+      \item {\color{green} ONLY data model not processing} --- all objects are dumb (had discussion with KT  and Mario on this)
 %	\item This was in UML (Rose) in the 90s but it was impractical to continue..
     \end{itemize}
   \item {\color{green} These are logical extensions of having agreed conventions\ldots}
@@ -100,11 +100,11 @@
   \frametitle{  Flight Operations Procedures in MOC}
 \vspace{-0.5cm}
 \begin{center}	
-   \includegraphics[width=0.6\textwidth,trim=0cm 0cm 0cm 0cm]{images/fops}
-
+   \includegraphics[width=0.6\textwidth,trim=0cm 0cm 0cm 0cm]{images/fops}\\
 \end{center}
-The FOP is followed by the spacecraft operators - the paper copy is just in case the computers fail.
-	We should try to keep documentation useful.
+\vspace{-15pt}
+The FOP is followed by the spacecraft operators - the paper copy is just in case the computers fail - could be useful! 
+{\color{red} But we should avoid {\em write only} documents.}
 }
 
 \frame {\frametitle{ Have a standard: DPAC follows ECSS }
@@ -134,20 +134,38 @@ The FOP is followed by the spacecraft operators - the paper copy is just in case
 \end{columns}
 }
 
-\frame {\frametitle{  Software licensing } 
+\frame {\frametitle{  LSST  DM docs } 
+
 \begin{itemize}
-  \item protect intellectual property  --- grant use to the consortium 
-  \item often forgotten or not well dealt with -  or worse ignored!
-  \item DPAC in general agree to LGPL \citellp{LL:WOM-019} -  some institutes e.g. ESA, do not allow staff to write GPL code.
-  \item Being allowed LGPL in ESA for Gaia involved lawyers and directors and some of my time and some Herschel people. 
-    \begin{itemize}
-  	\item now ALL ESA science missions can use LGPL with D/SRE approval.
-    \end{itemize}
+  \item  No standard - no Overview  of DM docs I could find  some web pages 
+\begin{itemize}
+  \item LDM-493 .. covers some aspects .. but still no Doctree - templates ?
+  \item not nice to have tex/markdown/word others ?   Markdown ok for implementation docs but for technotes for science notes?  
+   \item did not find a document management plan for DM .. 
 \end{itemize}
-\begin{center}
-      \includegraphics[width=0.7\textwidth]{images/dilbertsl}\\
-{\tiny You may use up to seven (7) cartoons per year at no costs as part of our fair use policy.}
-\end{center}
+  \item Mention made of LPM-051 .. but is DM following this ? Or just not declaring controlled documents .. prefer term ISSUED rather than controlled
+	\begin{itemize}
+
+   \item docushare  is the LSST repo but DM docs seem old (did find some from KT) - should all issued docs be there (I think so ..)
+	\item would expect to find all Technotes from DM in docushare .. like in a technotes folder ... SQR-006 gives an API which I may be able to use - should not be this hard.
+	\end{itemize}
+\item would like to find all draft docs in one DM repo .. 
+    \item everything is {\em referenceable} - but I do not find a single bibtex database or such for issued docs ..  (Gaia livelink metadata is exported as a bibtex every night) 
+\end{itemize}
+}
+\frame {\frametitle{  LSST  DM docs } 
+\begin{itemize}
+  \item  LDTN-030 - ok for code documentation -  understand its evolving- 
+	\begin{itemize}
+	\item overlaps LDM-493 somewhat - Why so many documentation projects - should we have ONE for DM ?
+	\item Provides document shards - no structure - how do you get a an old version (users will not get from git) .. LTD perhaps - but not well explained.
+	\item All products should be listed and for each product the set of docs .. the Audience seems too broad to cover with one type of document.
+	
+	\item This "In our case, the situation is complicated by the fact that Data Management software is being built by multiple teams across many coupled repositories. Taken together, the software repositories of the Data Management System are typically called the Stack, but not all parts of the Stack are used together. There are server-side database and display components, as well as pipelines algorithms bound together with middle ware." {\color{red} does not sound like good system engineering is in place .. }
+	\item Unclear in a massive web how one  can check consistency to any given level for docs .. {\color{red} Potential  problem for reviewers}
+	\end{itemize}
+\end{itemize}
+  
 }
 
 
@@ -178,7 +196,7 @@ The FOP is followed by the spacecraft operators - the paper copy is just in case
     \begin{itemize}
       \item Access control according to Group membership in the LDAP 
     \end{itemize}
-  \item Mantis for centralized issue tracking (includes risks and actions)
+  \item Mantis for centralised issue tracking (includes risks and actions)
     \begin{itemize}
       \item ALL DPAC issues in one system hosted at ESTEC 
       \item {\color{red} Jira would probably be better }
@@ -202,209 +220,6 @@ The FOP is followed by the spacecraft operators - the paper copy is just in case
       \item {\color{blue} virtual machines make some reasons for Java invalid}
     \end{itemize}
 \end{itemize}
-}
-
-
-\section{Management}
-\frame {\frametitle{  Communication } 
-\begin{itemize}
-  \item Internal 
-    \begin{itemize}
-      \item the newsletter is excellent and well contributed to
-      \item (few) focused working groups and working meetings 
-      \item To date never had a consortium meeting; {\color{red} probably a mistake.} --- we do intend
-        this during processing
-      \item As for any project cost of entry for new people is very high {\color{blue} --- no obvious
-      solution }
-    \end{itemize}
-\pause
-  \item ESA policy initially to reduce contact between DPAC and Astrium (who construct Gaia)
-    {\color{red} not good}
-\pause
-  \item External 
-    \begin{itemize}
-      \item perhaps could have had a better DPAC website 
-      \item ESA PR also not great (ok as they point out they have a tiny fraction of NASA budget)
-      \item LSST.org is very nice.
-      \item {\color{blue}Publication policy was dealt with very late }
-    \end{itemize}
-\end{itemize}
-}
-
-\frame {\frametitle{  Operations Rehearsals } 
-\begin{itemize}
-  \item Have had 4 operations rehearsals in  2 years before launch and more after
-  \item Not tests as such; intended for training staff and checking procedures 
-  \item Move the teams mind-set away from just development and towards building a usable system.
-  \item Helped find defects as well as other needs (missing features and functions) in the  software
-    running at DPCs.
-  \item These are good {\color{blue} could have started earlier }
-  \item {\color{red} It became clear operational awareness was low across DPAC, i.e.\ in terms of
-  turn around of commanding to Gaia and how it works, how data flows, general constraints of
-satellite operations}
-\end{itemize}
-}
-
-
-\frame {\frametitle{  Requirements Management } 
-\begin{itemize}
-  \item Some requirements at an appropriate level are very useful. 
-    \begin{itemize}
-        {\color{red}
-      \item could have been better formulated
-    \item separation of performance, software, and science requirements should have been clearer}
-  \end{itemize}
-\item DPAC stayed away from requirements tools like DOORS though
-\item Used macros in LaTeX for requirements and scripts to build trace tables
-\item All requirements and test reports then ingested in the Information Management Tool \citellp{2012SPIE.8449E..0GC}
-\item {\color{red} Could probably have put more effort in this earlier}
-  \begin{itemize}
-    \item might then have decided to start up some CUs later.
-  \end{itemize}
-\item Reviews are an unavoidable part of all this 
-  \begin{itemize}
-    \item ESA reviews are {\color{blue} too formal and too large}
-    \item External reviewers like Innocente (\citell{LL:VI-001},\citell{LL:VI-002}) {\color{green}
-    very good} --- would be good to have a few external review {\em partners}
-  \end{itemize}
-\end{itemize}
-}
-
-
-\frame[allowframebreaks] {\frametitle{  Management and  science } 
-All large projects, and especially science projects, have management {\em issues}. “Most IT projects in excess of \$10 million fail,”  Mark Naggar
-\begin{itemize}
-  \item In 2006 we had a big management training week for the DPAC management --- though sceptical
-    to start most found it good
-  \item Science project management is a little different but still books like
-    \citep{handy1993understanding} are quite useful
-  \item Cyclic (Agile type) development seems well suited to science
-    \begin{itemize}
-      \item we chose six month cycles --- probably too long 
-      \item {\color{green} some prototypes started real early} \citep{1999BaltA...8...57O}
-      \item we have great simulations --- they started in 1998 before Gaia was accepted
-        \begin{itemize}
-          \item Still they always seemed to be a little behind what people wanted --- {\color{blue} we
-          have no solution for that, could not start earlier}
-          \item simulator fell out of the ECSS rigour --- testing etc\ldots
-        \end{itemize}
-      \item we did a lot of testing; {\color{blue} some tests were probably not appropriate in hindsight}
-      \item {\color{red} despite aiming for test driven development --- NOT ENOUGH effort in
-      testing and many systems only recently got continuous integration}
-    \end{itemize}
-  \item Scientific institutes are not good at managing things like software projects (hard anyway)
-    \begin{itemize}
-      \item {\color{red} Interface control between software was insufficient } --- data model was
-        not enough
-      \item Perhaps ESA should have taken control of all critical software 
-      \item ESA is stepping back from this type of role in future missions and was not
-        totally happy about the level of involvement of ESAC in DPAC.
-    \end{itemize}
-  \item Note: industrial contracts for scientific software are difficult
-    \begin{itemize}
-	\item but science consortia neeed managers and engineers earlier 
-      \item Did an experiment with this on Gaia very early on
-      \item XMM have there own woeful tale to tell
-    \end{itemize}
-\end{itemize}
-}
-
-
-\frame {
-  \frametitle{  DPAC Executive  in 2011  at ULB}
-\vspace{-0.5cm}
-\begin{center}	
-   \includegraphics[width=0.9\textwidth,trim=0cm 0cm 0cm 0cm]{images/dpace13h}
-
-At ULB Belgium	 - yes we will stand on our hands if we need to.\\
-	DPACE is small and technically focused. Meeting about twice  a year.
-	
-\end{center}
-}
-
-\frame[allowframebreaks]{\frametitle{  DPAC Management } 
-\begin{itemize}
-  \item Started out with the idea of limited number (9) of decoupled Coordination Units(CU) ---
-    {\color{green} Good}
-    \begin{itemize}
-      \item this resulted from much discussion in the DACC --- {\color{green} It was good to have
-      dedicated group to decide how the consortium was set up; n.b.\ DACC$\ne$DPACE} 
-    \item {\color{green} Having relatively small executive (DPACE) being technically focused was
-    also good}
-  \item All in DPACE may not have agreed with all decisions but ALL backed them once made 
-\end{itemize}
-\item Data processing centres added under CUs --- also a bit decoupled --- {\color{blue} Could have been
-more coupled and better controlled}
-  \begin{itemize}
-    \item DPCs often started too late 
-      \begin{itemize}
-        \item led to a lack of {\em engineering} in many areas ---
-          {\color{red} lack of software engineers in initial phases, many hires were
-        astronomers }
-        \item performance aspects of the systems were handled too late
-        \item integration efforts were underestimated 
-      \end{itemize}
-    \item CUs turned out not to be so decoupled in software, e.g.\ data models need to be the
-      same\ldots
-    \item May have been a mistake to allow different frameworks/DBMSs in different DPCs
-      \begin{itemize}
-        \item certainly inefficient in effort terms 
-        \item however it is too easy to make things NOT work --- I  did not want to {\em force}
-          everyone down the route I followed
-      \end{itemize}
-  \end{itemize}
-\item despite starting with a management course --- Management support was insufficient 
-  \begin{itemize}
-    \item More management support in setting up the CUs and reporting would have been good ---
-      {\color{red} perhaps more emphasis should have been put here by DPACE}
-    \item The Project Office (PO) came along too late to assist with shaping this --- it was good and should have started earlier 
-  \end{itemize}
-\item Too collaborative? 
-  \begin{itemize}
-    \item DPAC was broadly inclusive --- CU leaders on paper had the chance to include or not groups
-      and WPs but in fact no one was left out
-    \item this has lead to some inefficiencies --- perhaps we could be smaller and more focused 
-    \item we possibly should have jettisoned some work packages, groups, and individuals early on
-    \item {\color{blue} In a proper phased approach some CUs could probably have started 2 years
-    later with minimum presence at kick off} 
-  \end{itemize}
-\item Too flexible and too inflexible 
-  \begin{itemize}
-    \item there are many configuration control boards and other groups to manage change
-    \item no one wants any change to anything --- {\em until the moment they want a change  then it
-      should be immediate}
-    \item {\color{red} We have found no solution to this} 
-  \end{itemize}
-\item {\color{blue}In hindsight some work packages were misplaced}
-\end{itemize}
-}
-
-
-\section{Conclusion}
-
-\frame{\frametitle{  Conclusion } 
-\begin{columns}
-\column{0.33\textwidth}
-\pgfputat{\pgfxy(0,0)}{\pgfbox[left,top]{
-\includegraphics[scale=0.8,trim=0cm 0cm 0pt 0pt]{images/starmap}
-}}
-\cite{Perryman2010}
-\column{0.67\textwidth}
-\vspace{-15pt}
-\begin{itemize}
-  \item many of us dreamed of a Gaia Processing Institute - only a dream for
-    us.
-\pause
-  \item Much mentioned here is contentious --- others do not see it exactly as I do.
-  \item For me DPAC started of well largely due to strong initial leadership especially
-    from Perryman
-  \item All agree we are fortunate to have some excellent people in DPAC 
-\pause
-  \item thanks to DPACE for their input to this presentation and to DPAC for all their work over the past years.
-  \item How this all works out will soon be seen\ldots probably a tough year ahead !
-\end{itemize}
-
-\end{columns}
 }
 
 
