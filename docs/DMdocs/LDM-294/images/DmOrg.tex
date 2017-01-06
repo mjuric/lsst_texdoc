@@ -56,22 +56,26 @@ textwidth=30cm,textheight=50mm]{geometry}
 
     \node (udmpm) [below=17mm of dmpm, text width=0mm]{};
 % SYSTEM ENG
-            \node (syseng) [mbox, text width=36mm, rectangle split, rectangle split parts=2, left=3.1cm of udmpm.north]
+            \node (syseng) [mbox, text width=38mm, rectangle split, rectangle split parts=2, left=3.1cm of udmpm.north]
                 {
                 Systems Engineering
                 \nodepart{second} \vspace{48mm}
                 };
-    \node (man) [mbox, below=6mm of syseng.north, text width=32mm] {\textbf{ Manager }\\ William O'Mullane };
-    \node (pipe) [psbox, below=1mm of man, text width=32mm] {\textbf{ Pipeline Scientist}\\ Robert Lupton };
-    \node (sysengineer) [mbox, below=1mm of pipe, text width=32mm] {\textbf{ System Engineer}\\ Tim Jenness };
-    \node (softarc) [mbox, below=1mm of sysengineer, text width=32mm] {\textbf{ Software Architect}\\ Kian Tat Lim };
-    \node (sysarc) [mbox, below=1mm of softarc, text width=32mm] {\textbf{ System Architect}\\ Don Petravick  };
+    \node (man) [mbox, below=6mm of syseng.north, text width=34mm] {\textbf{ Manager }\\ William O'Mullane };
+    \node (pipe) [psbox, below=1mm of man, text width=34mm] {\textbf{ Pipeline Scientist}\\ Robert Lupton };
+    \node (sysengineer) [mbox, below=1mm of pipe, text width=34mm] {\textbf{ System Engineer}\\ Tim Jenness };
+    \node (softarc) [mbox, below=1mm of sysengineer, text width=34mm] {\textbf{ Software Architect}\\ Kian Tat Lim };
+    \node (sysarc) [mbox, below=1mm of softarc, text width=34mm] {\textbf{ Operations Architect}\\ Don Petravick  };
 %%%% end SYSENG
 
     \node (pcon) [mbox, right=3.1cm of udmpm.north , text width=45mm] {\textbf{Project Control/Scheduler }\\ Kevin Long?};
+
+    \node (docu) [mbox, below=5mm of pcon, text width=45mm] {\textbf{DM Documentalist}\\ Jonathon Sick ?};
+
+
     %\node (al) [below=69mm of dmpm, text width=0mm]{};
     \dmnode[below=55mm of dmpm]{suit}{SUIT} {Xiuqin Wu  }{ David Ciardi } ;
-    \dmnode[left=2mm of suit]{das}{Data Access Services}{Fritz Mueller}{Sys Eng? Mario?}  ;
+    \dmnode[left=2mm of suit]{das}{Data Access Services}{Fritz Mueller}{Mario Juric}  ;
     \dmnode[left=2mm of das]{drp}{Data Release Production}{John Swinbank}{Jim Bosch}  ;
     \dmnode[left=2mm of drp]{alerts}{Alert Production}{Simon Krughoff}{Andy Connolly}  ;
   \dmnode[right=2mm of suit]{square}{SQuaRE} {Frossie Economou}{ Michael Wood-Vasey} ;
@@ -94,6 +98,7 @@ textwidth=30cm,textheight=50mm]{geometry}
 
    \draw[line] (syseng.east) to (udmpm.north);
    \draw[line] (pcon.west) to (udmpm.north);
+   \draw[line] (docu.west) -| (udmpm.north);
 %science
    \draw[sline] (ps.west) to (pm.east);
    \draw[sline] (dmps.west) to (dmpm.east);
