@@ -24,6 +24,9 @@ def doFile(inFile ):
 		line=line.replace("DpacD","D");
 		line=line.replace("dpacD","d");
 		line=line.replace("dpac","lsst");
+		line=line.replace("\\vspace*{-1cm}","");
+		line=line.replace("myInitials","WOM");
+		line=line.replace("GAIA-C?-??-???-???-???-\\dpacDocIssue","LDX-XXXXX");
 		fout.write(line);
 	fout.close()
 	fin.close()
