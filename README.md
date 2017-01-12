@@ -22,9 +22,9 @@ with these templates.
 Available templates
 -------------------
 In the templates folder are some example files. Just copy it to your directory to use as a starting point for a new document. 
-	tn_template.tex    - basic technical note
-	plan_template.tex  - detailed plan with all suggested sections
-	presentation.tex   - using lsstbeamer.cls for LSST themed presentation
+*	tn_template.tex    - basic technical note
+*.	plan_template.tex  - detailed plan with all suggested sections
+*	presentation.tex   - using lsstbeamer.cls for LSST themed presentation
 
 
 Setting Up
