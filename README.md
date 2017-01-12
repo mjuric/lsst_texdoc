@@ -22,13 +22,13 @@ with these templates.
 Available templates
 -------------------
 In the templates folder are some example files. Just copy it to your directory to use as a starting point for a new document. 
-	* tn_template.tex    - basic technical note
-	* plan_template.tex  - detailed plan with all suggested sections
-	* sdd_template.tex 	- SOftware Design Documnent
-	* presentation.tex   - using lsstbeamer.cls for LSST themed presentation
-	* stp_template.tex - Software Test Plan
-	* sts_template.tex - Software Test Specification
-	* str_template.tex - Software Test Report
+* tn_template.tex    - basic technical note
+* plan_template.tex  - detailed plan with all suggested sections
+* sdd_template.tex 	- SOftware Design Documnent
+* presentation.tex   - using lsstbeamer.cls for LSST themed presentation
+* stp_template.tex - Software Test Plan
+* sts_template.tex - Software Test Specification
+* str_template.tex - Software Test Report
 
 
 Setting Up
