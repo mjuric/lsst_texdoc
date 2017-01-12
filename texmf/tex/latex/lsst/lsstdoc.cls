@@ -36,8 +36,8 @@
 \RequirePackage[usenames]{xcolor}
 %\RequirePackage{datetime}
 %\RequirePackage{microtype}
-\usepackage{listings}
-\usepackage{nameref}
+%\RequirePackage{listings}
+\RequirePackage{nameref}
 
 
 
