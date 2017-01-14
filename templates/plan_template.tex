@@ -1,8 +1,9 @@
-\documentclass[CUx,lsstdraft,SDP]{lsstdoc}
+\documentclass[DM,lsstdraft,SDP]{lsstdoc}
 %Replace the CUx here and all \CU will resolve below.
 
 \usepackage{gwp}
 \usepackage{risk}
+\usepackage{longtable}
 
 \begin{document}
 
@@ -169,9 +170,9 @@ table such as the one included bellow from CU1. To generate the table for your
 CU or DPC you must set the environment variable DOCCOMMON to point to
 CU1/docs/common. Preferably include DOCCOMON/scirpts in your path. Then run the script
 passing your CUx as an argument i.e. for cu1
-\begin{verbatim}
+\begin{code}
 effortTex.pl CU1
-\end{verbatim}
+\end{code}
 
 \include{CU1effort}
 
