@@ -1,7 +1,6 @@
 \documentclass[DM,TN]{lsstdoc}
 
 
-\begin{document}
 
 %example of how to add your local logo - the file must appear in your texinputs
 %\setDocLocalLogo{local_logo}
@@ -20,7 +19,8 @@
 \setDocAffil{My institute }   %optional field
 %\setLSSTDU{DUy} % optional
 
-\mktitle
+\begin{document}
+\mkshorttitle
 
 % TN may not need a doc history ... comment in/out as wished  MOST RECENT FIRST
 %\begin{docHistory}
@@ -29,9 +29,8 @@
 %
 %\newpage   % uncomment if you want the doc history on a separate page
 
-% comment if you do not want a TOC
-\tableofcontents
-\newpage
+% uncomment if you want a TOC
+%\tableofcontents
 
 \section{Introduction \label{sect:intro}}
 This is the most basic template for a technical note.
@@ -39,19 +38,10 @@ This is the most basic template for a technical note.
 \subsection{Objectives \label{sect:objectives}}
 What is the context and motivation for this technical note.
 
-\subsection{Applicable Documents \label{sect:ad}}
-When applicable documents change a change may be required in this document.
-The applicable documents are listed here for clarity - the full reference is
-below in \secref{sect:refs}. This should be a relatively short list in most
-cases, and for technical notes may not be needed at all.
+\section{The rest of the document \label{sect:sec1}}
+\input{eqt}
 
-\begin{tabular}[htb]{l l}
-\citell{LL:WOM-018}&    DPAC Software System Specification \\
-\citell{LL:AUTH-XXX}&   Software Development Plan for \CU  \\
-% Don't refer to AD1 etc below just use the \citel
-\end{tabular}
-
-\subsection{References\label{sect:refs}} \vspace*{-1cm}
+\section{References\label{sect:refs}} 
 \renewcommand{\refname}{}
 \bibliographystyle{gaia_aa}
 \bibliography{gaia_livelink_valid,books,refs_ads}
@@ -61,16 +51,13 @@ place of cite for livelink docs using this put the DOC code as the ref
 rather than a number or author/year e.g. \citell{LL:WOM-011}. Other paper
 citations should just use cite and will come out AA style e,g, \cite{2001ASPC..225..201O}.
 
-\subsection{Definitions \label{sect:definition}}
+\appendix
 
-\subsection{Acronyms \label{sect:acronyms}}
+\section{Acronyms \label{sect:acronyms}}
 The following is a complete list of acronyms used in this document.
 % Use the acronym tool from CU1 to generate acronym list for your doc.
 \input{acronyms}
 
 
-\section{The rest of the document \label{sect:sec1}}
-
-\input{eqt}
 
 \end{document}
