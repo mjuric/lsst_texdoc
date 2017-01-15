@@ -35,13 +35,13 @@
 %\RequirePackage{comment}
 \RequirePackage{xspace}
 %\RequirePackage{microtype}
-%\RequirePackage{listings}
+\RequirePackage{listings}
 %\RequirePackage{nameref}
 
 
 %\RequirePackage{mathptmx} % note this messes up \vec definition... do not e add put in your doc if you want it
 
-\definecolor{lsstblue}{rgb}{0.00,0.3,0.6}
+\definecolor{lsstblue}{RGB}{60,120,170}
 
 
 % Switch off the onecolumn and twocolumn options
@@ -267,8 +267,11 @@
         \makeatletter
             \put(\strip@pt \textwidth,\strip@pt \textheight){%
                 \makebox(0,0){%
-			\includegraphics[scale=0.9]{lsstscopegrey}
+			\includegraphics[scale=0.9]{lsstscopegrey}\\
                     }}%
+		\vspace{10cm}
+		{\hspace{-3cm}\color{lsstblue}\rule{25cm}{2.5cm}}
+	    
         \makeatother
     }%
 
