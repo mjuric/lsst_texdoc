@@ -5,7 +5,7 @@ SRCS=$(wildcard *template.tex)
 
 OBJS=$(SRCS:.tex=.pdf)
 
-all: $(OBJS)
+all: $(OBJS) 
 
 
 all: *
