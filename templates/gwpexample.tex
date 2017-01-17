@@ -1,0 +1,103 @@
+%
+%	Template file Gaia WP description
+%
+%	Author: U. Lammers, Mon Nov 14 18:47:05 CET 2005
+%
+%	$Id: gwptemplate.tex 14339 2007-02-07 16:32:27Z womullan $
+%
+
+%
+%	Start description of WP
+%	Environment: \GWP
+%	Arguments:
+%		1) WP code adhering to GAIA-C1-TN-ESAC-WOM-001
+%		2) Title
+%
+\begin{GWP}{T-CNNN-PPPP}{Work Package Title}
+%
+%	Specify provider and manager of WP
+%	Command: \gwpprovmanag
+%	Argument(s):
+%		1) Provider: list of individuals performing the work (free text)
+%		2) Manager:	WP manager's name and name of deputy where appropriate
+%			(free text)
+%
+\gwpprovmanag{List of people doing the work}{Name of WP's manager}
+%
+%	Define start+end of WP plus total man power effort
+%	Command: \gwpstartendeffort
+%	Argument(s):
+%		1) Start of WP [dd/mm/yyyy]
+%		2) End of WP [dd/mm/yyyy]
+%		3) The approximate total effort allocated or estimated for the
+%		   package [man months] (number without unit)
+%
+\gwpstartendeffort{dd/mm/yyyy}{dd/mm/yyyy}{nnn}
+
+%	Descripiton of objective of WP
+%	Command: \gwpobjective
+%	Argument(s):
+%		1) Description (free text)
+%
+\gwpobjective{Describe here the objective of the WP - this is a free
+text input - all \LaTeX\ constructs can be used (lists, verbatim, etc.)}
+%
+%	List all tasks this WP consists of
+%	Command: \gwptask
+%	Argument(s):
+%		1) Task list (free text)
+\gwptask{Listing of all tasks this WP consists of - this is a free text
+text input - all \LaTeX\ constructs can be used, e.g.\
+\begin{enumerate}
+\item Task 1
+\begin{enumerate}
+\item SubTask 1
+\end{enumerate}
+\item Task 2
+\item Task 3
+\end{enumerate}
+}
+%
+%	Specify input and output of this WP
+%	Commands: \gwpinput + \gwpoutput
+%	Argument(s):
+%		1) List of WP inputs/outputs (free text)
+%
+\gwpinput{List here all inputs to the WP}
+\gwpoutput{List here all outputs of the WP}
+%
+%	Specifiy WP deliverables
+%	Command: \gwpdeliver
+%	Argument(s):
+%		1) List of WP deliverables, e.g. software or report under configuration
+%		   control
+%		
+\gwpdeliver{List of WP deliverables, e.g. software or report under
+configuration control}
+%
+%	Specify WP dependencies
+%	Command: \gwpdepend
+%	Argument(s):
+%		1) List of dependencies of this WP (free text)
+%
+\gwpdepend{List of all dependencies of this WP}
+%
+%	Specify all interfaces of this WP
+%	Command: \gwpinterface
+%	Argument(s):
+%		1) List of all interfaces of this WP, i.e. links with other
+%		   tasks, WPs, or CUs (free text)
+%
+\gwpinterface{List of all interfaces of this WP, i.e.\ links with other
+tasks, WPs, or CUs}
+%
+%	Specify remarks
+%	Command: \gwpremark
+%	Argument(s):
+%		1) Remarks (free text)
+%
+\gwpremark{Remarks - free text}
+%
+%	END of GWP enviroment
+%
+\end{GWP}
