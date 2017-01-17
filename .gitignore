@@ -1,3 +1,6 @@
+*.fdb_latexmk
+*.fls
+*.swp
 *one.pdf
 *snm
 .DS_*
