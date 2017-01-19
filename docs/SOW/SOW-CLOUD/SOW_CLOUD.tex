@@ -1,0 +1,52 @@
+\documentclass[DM,lsstdraft,SOW]{lsstdoc}
+
+
+%set the WP number or product here for the requirements 
+\def\product{LSST Cloud Study }
+
+\setDocCompact{true}
+
+%Product name first in title 
+\setDocTitle    [SOW for \product]
+                    {\color[rgb]{0.16,0.42,0.57} \sf \product ~Statement of Work } 
+                    
+\setDocAuthor   {K.T Lim, Don Petravich, William O'Mullane}                % the author(s)
+\setDocApprove  {Victor Krabendam}              % approval by ...
+\setDocRef      {DM-SOW-01-\docIssue} % the reference code
+\setDocIssue    {0D}                        % the issue
+\setDocRevision {1}                        % the revision
+\setDocDate     {\today}              % the date of the issue
+\setDocStatus   {draft}                    % the document status
+% Comment out the setLSSTDU if you do not want it do not set it to Blanck
+%\setLSSTDU          {DUy}                      % the DU within your CU
+ 
+%
+% a short abstract
+%
+\setDocAbstract { We propose to study various aspects of cloud deployment 
+for LSST pipelines and services. This statement of work would be used as the basis of an outsourced contract to get inputs on the viabiliat and cost of public and private cloud optios. }
+
+\begin{document}
+%
+% the title page
+%
+\mktitle
+
+%
+%	Revision history MOST RECENT FIRST
+%
+\begin{docHistory}
+\addtohist{D}{1}{2017-01-dd}{WOM,KT}{First draft}
+\end{docHistory}
+
+%
+%	TOC
+%
+\newpage
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+
+\input {body}
+
+\end{document}
