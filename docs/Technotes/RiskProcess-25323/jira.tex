@@ -1,0 +1,94 @@
+\subsubsection{Use of JIRA as a risk management tool}
+
+{\color{red} Tim -- this is a section for you to update}
+
+
+Jira is an issue tracking tool that has been adopted by LSST to assist and coordinate a software development effort distributed throughout Europe. This section describes how Jira will be used as a risk management tool.
+
+In particular, for a risk reported as a JIRA issue:
+\begin{itemize}
+\item The automatically generated JIRA issue number will be used as a unique alphanumeric risk identifier.
+\item The JIRA Summary serves as the short descriptive title of the risk.
+\item The JIRA Description serves as the full description of the risk.
+\item Under the JIRA Risk Register project, additional customised fields to enter the risk likelihood, severity. Changes to these fields are automatically logged by JIRA.
+\item Recommendations by the RMT are reported in the custom fields "Recommendations" and "Actions".
+\end{itemize}
+
+
+\subsubsection{Risk submission in JIRA}
+
+ When submitting a new risk in JIRA a set of fields are to be fulfilled, some are optional.
+{\color{red} THIS NEEDS REVIEW}
+ The table below present these fields:
+\begin{longtable}{|l|p{0.6\textwidth}|}\hline
+{\bf JIRA field} & {\bf Description} \\ \hline
+Summary    & Summary of the risk  \\ \hline
+Description    & Complete description:
+\begin{itemize}
+  \item Detail of the risk.
+  \item Cause.
+  \item Possible action.
+\end{itemize}
+\\
+\hline
+Consequence  & Description of the consequences in terms of time, resource, performance.\\
+\hline
+Risk severity (optional)   & See \ref{sect:scoring}. \\
+\hline
+Risk likelihood (optional)   & See \ref{sect:scoring}. \\
+\hline
+\end{longtable}
+
+Note that any new risk with a vague description will be \textbf{closed} by the RMT.
+After review by the RMT, each registered risk shall have at the following fixed properties :
+
+\begin{itemize}
+\item A unique alphanumerical identifier that, once assigned, will not change.  It is solely the task of the RMT to assign this identifier.
+\item A short descriptive title.
+\item A full description (including both cause and proposed solution).
+\item Consequence of the risk in terms of time, resource, performance.
+\item The name of the original submitter.
+\item The date of submission.
+\item Estimated date of occurrence
+\end{itemize}
+
+In addition, each registered risk shall have the following transient properties (i.e. properties that change with time) also assigned by the RMT:
+\begin{itemize}
+\item A severity and likelihood rating, and the derived the risk index.
+\item The date of assessment (first assessment coincides with the date of risk registration).
+\item Recommended response at time of assessment (reduction or acceptance).
+\item JIRA status: assigned, resolved or closed.
+\item Actions taken (if any), when and by whom.
+\item \ldots
+\end{itemize}
+
+The submitter may provide an initial risk rating; in this case these ratings must be re-evaluated by the RMT at time of registration.
+
+The risk identifier may contain information of the source of submission (for example, a CU number), but {\bf not} the risk assessment scores, as these will change with time.
+
+The list of registered risks at the DPACE level constitutes the DPAC Risk Register. The DPAC Risk Register shall be reissued after each risk management meeting.
+
+\subsubsection{Risk Process Vs JIRA Status \label{sect:JIRA}}
+
+
+The figure below presents the different JIRA status through the Risk Process, the blue boxes are the JIRA status:
+
+\begin{figure}[H]
+\begin{center}
+%\includegraphics[scale=0.9]{RiskJIRAStatus}
+\end{center}
+\caption{JIRA Status through Risk Process}
+\label{fig:riskJIRA}
+\end{figure}
+
+
+Note that all 'unacceptable' risk with an 'assigned' JIRA Status have at least one dedicated action monitored in JIRA.
+
+\subsubsection{Risk change tracking}
+
+An identified risk has a natural "life-cycle": a beginning, a middle and an end. These three parts correspond to risk registration, a monitoring phase and eventual risk closing. All risks surviving to the end of project are of course retired at project's end. During its lifespan a risk is constantly monitored and reassessed, perhaps acted on and (perhaps) reduced. In short, a risk accumulates a history.
+
+The history of a risk is essentially a history of all past values of its transient properties. Tracking the history of risks is an important part of risk monitoring.
+
+In addition to the Risk Register, the RMT shall issue a Risk Report from JIRA after each risk management meeting, with summary statistics of the current risks and overall risk trends.
+
