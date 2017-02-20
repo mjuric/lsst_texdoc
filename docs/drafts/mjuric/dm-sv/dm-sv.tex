@@ -1,0 +1,64 @@
+\documentclass[DM,lsstdraft,SOW]{lsstdoc}
+
+%set the WP number or product here for the requirements 
+\def\product{DM Science Verification}
+
+\setDocCompact{true}
+
+%Product name first in title 
+\setDocTitle    [\product]
+                    {\color[rgb]{0.16,0.42,0.57} \sf \product: Definition, Scope, and Organization } 
+                    
+\setDocAuthor   {Mario Juric, William O'Mullane (n.b.: yet to review)}               % the author(s)
+\setDocApprove  {Zeljko Ivezic, Victor Krabendam}              % approval by ...
+\setDocRef      {DM-mjuric-01-\docIssue} % the reference code
+\setDocIssue    {1D}                        % the issue
+\setDocRevision {1}                        % the revision
+\setDocDate     {\today}              % the date of the issue
+\setDocStatus   {draft}                    % the document status
+% Comment out the setLSSTDU if you do not want it do not set it to Blanck
+%\setLSSTDU          {DUy}                      % the DU within your CU
+ 
+%
+% a short abstract
+%
+\setDocAbstract { 
+
+In this document we lay out the scope and organizational concepts of the LSST {\bf Data Management Science Verification} (DM SV) effort. 
+% The primary objective of this document is to define a high-level mechanism by
+% which we will validate that the delivered DM system, as a whole, is on track
+% to being capable to acceptably support the science goals of commissioning and
+%operations -- {\bf DM Science Verification}. 
+We define Science Verification as {\em
+the assurance that the Data Management system meets the needs of the
+scientific community and other identified stakeholders}.  \\
+
+This documents defines the scope of the SV work, the deliverables, the
+breakdown of work, as well as assigns responsibilities for DM-specific SV
+within the DM Organization.
+
+}
+\begin{document}
+%
+% the title page
+%
+\mktitle
+
+%
+%	Revision history MOST RECENT FIRST
+%
+\begin{docHistory}
+\addtohist{D}{1}{2017-02-17}{MJ}{First draft}
+\end{docHistory}
+
+%
+%	TOC
+%
+\newpage
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+
+\input {body}
+
+\end{document}
