@@ -56,16 +56,17 @@ textwidth=30cm,textheight=50mm]{geometry}
 
     \node (udmpm) [below=17mm of dmpm, text width=0mm]{};
 % SYSTEM ENG
-            \node (syseng) [mbox, text width=38mm, rectangle split, rectangle split parts=2, left=3.1cm of udmpm.north]
+            \node (syseng) [mbox, text width=43mm, rectangle split, rectangle split parts=2, left=3.1cm of udmpm.north]
                 {
                 Systems Engineering
-                \nodepart{second} \vspace{48mm}
+                \nodepart{second} \vspace{50mm}
                 };
-    \node (man) [mbox, below=6mm of syseng.north, text width=34mm] {\textbf{ Manager }\\ William O'Mullane };
-    \node (pipe) [psbox, below=1mm of man, text width=34mm] {\textbf{ Pipeline Scientist}\\ Robert Lupton };
-    \node (sysengineer) [mbox, below=1mm of pipe, text width=34mm] {\textbf{ System Engineer}\\ Tim Jenness };
-    \node (softarc) [mbox, below=1mm of sysengineer, text width=34mm] {\textbf{ Software Architect}\\ Kian Tat Lim };
-    \node (sysarc) [mbox, below=1mm of softarc, text width=34mm] {\textbf{ Operations Architect}\\ Don Petravick  };
+    \node (man) [mbox, below=6mm of syseng.north, text width=39mm] {\textbf{ Manager }\\ William O'Mullane };
+    \node (pipe) [psbox, below=1mm of man, text width=39mm] {\textbf{ Pipeline Scientist}\\ Robert Lupton };
+    \node (sysengineer) [mbox, below=1mm of pipe, text width=39mm] {\textbf{ System Engineer}\\ Tim Jenness };
+    \node (softarc) [mbox, below=1mm of sysengineer, text width=39mm] {\textbf{ Software Architect}\\ Kian Tat Lim };
+    \node (sysarc) [mbox, below=1mm of softarc, text width=39mm] {\textbf{ Operations Architect}\\ Don Petravick  };
+    \node (reqeng) [mbox, below=1mm of softarc, text width=39mm] {\textbf{ Requirements Engineer}\\ Gregory Dubois-Felsmann  };
 %%%% end SYSENG
 
     \node (pcon) [mbox, right=3.1cm of udmpm.north , text width=45mm] {\textbf{Project Control/Scheduler }\\ Kevin Long?};

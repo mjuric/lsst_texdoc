@@ -33,6 +33,7 @@ textwidth=30cm,textheight=50mm]{geometry}
 \tikzstyle{abox}=[rectangle, minimum height=2cm, color=red, inner sep=2pt, text centered, text width=3cm]
 
 \tikzstyle{pline}=[->, line width=3pt, brown]
+\tikzstyle{pdline}=[->, line width=3pt, dashed, brown]
 \tikzstyle{rline}=[->, line width=4pt, shorten >=18pt, dashed, red!70]
 \begin{document}
 
@@ -78,6 +79,7 @@ textwidth=30cm,textheight=50mm]{geometry}
    \draw[pline] (close.south) -- ++(0,-0.3) -| (mon.north);
 
    \draw[pline] (nred.south) -- (mon.north);
+   \draw[pdline] (mon.west) -- ++(-4.5,0) -- ++(0,7) --   (ass.west);
 % actor lines
     
    \draw[rline] (lsst.west) -- (id.east) ;
