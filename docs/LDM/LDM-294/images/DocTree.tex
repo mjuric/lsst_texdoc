@@ -61,6 +61,7 @@ textwidth=30cm,textheight=50mm]{geometry}
     \node (suitr) [docbox, right=10mm of compz.east] { SUIT Requirements LDM-130};
 
     \node (compd)  [docbox, above=12mm of crdots] { Component Design LDM-148,151,152,135,129};
+    \node (userd)  [docbox, right=5.7cm of compd] { User Documumentation };
 
     \node (compxt) [docboxm, above=29mm of compx] { Component X Test Plan };
     \node (compzt) [docboxm, above=29mm of compz] { Component Z Test Plan };
@@ -77,8 +78,9 @@ textwidth=30cm,textheight=50mm]{geometry}
    \draw[dline] (dmreq.north) to (compx.south);
    \draw[dline] (dmreq.north) to (compz.south);
 
-   \draw[dline] (svtp.north) -- ++(0,4.1)  -| (compzt.west);
-   \draw[dline] (svtp.north) -- ++(0,4.1)  -| (suitt.west);
+   \draw[dline] (svtp.north) -- ++(0,4.1)  -| ++(7,1.2) -- (compzt.west);
+   
+   \draw[dline] (svtp.north) -- ++(0,4.1)  -| ++(11.3,1.2) -- (suitt.west);
    \draw[dline] (svtp.north) |- (compxt.west);
 
    \draw[dline] (compx.north) to (compd.south);
