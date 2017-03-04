@@ -72,7 +72,9 @@ textwidth=30cm,textheight=50mm]{geometry}
     \node (pcon) [mbox, right=3.1cm of udmpm.north , text width=45mm] {\textbf{Project Control/Scheduler }\\ Kevin Long?};
 
     \node (docu) [mbox, below=5mm of pcon, text width=45mm] {\textbf{DM Documentalist}\\ Jonathon Sick ?};
+    \node (pdocu) [mbox, right=5mm of docu, text width=45mm] {\textbf{LSST Documentalist}\\ Robert McKercher};
 
+    \node (admin) [mbox, below=5mm of docu, text width=45mm] {\textbf{DM Admin}\\ Libby Petrick};
 
     
 
@@ -112,10 +114,12 @@ textwidth=30cm,textheight=50mm]{geometry}
    \draw[line] (sysengg.east) to (udmpm.north);
    \draw[line] (pcon.west) to (udmpm.north);
    \draw[line] (docu.west) -| (udmpm.north);
+   \draw[line] (admin.west) -| (udmpm.north);
 %science
    \draw[sline] (ps.west) to (pm.east);
    \draw[sline] (dmps.west) to (dmpm.east);
 
+   \draw[line] (docu.east) --  (pdocu.west);
    
 
 \end{tikzpicture}
