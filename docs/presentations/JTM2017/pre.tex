@@ -1,0 +1,42 @@
+
+\author[William O'Mullane]{William O'Mullane }
+
+\date[05/03/2017]{ 5$^{\text{th}}$ March  2017, LSST JTM, \\ LA, Califronia, USA. }
+
+
+\institute[LSST]{Data Management\\LSST}
+% ----------------------
+
+
+\AtBeginSection[]  % "Beamer, do the following at the start of every section"
+{
+\begin{frame}<beamer>
+\addtocounter{framenumber}{-1}
+\frametitle{Outline} % make a frame titled "Outline"
+\tableofcontents[currentsection]  % show TOC and highlight current section
+\end{frame}
+}
+
+
+\AtBeginSubsection[]
+{
+   \begin{frame}
+\addtocounter{framenumber}{-1}
+       \frametitle{Outline}
+       \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+}
+
+
+%
+% Empty frame environment: useful for page-filling images.
+%
+% argument is frame title
+%
+\newenvironment{emptyframe}[1]{%
+\begin{frame}[plain]
+  \hypertarget<1>{#1}{}
+  \only<1>{\pdfbookmark[2]{#1}{#1}}}%
+{\end{frame}}
+
+

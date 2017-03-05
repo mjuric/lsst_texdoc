@@ -1,0 +1,72 @@
+
+\PassOptionsToPackage{table}{xcolor}
+
+\documentclass[]{lsstbeamer}
+
+\usepackage{animate}
+\usepackage{media9}
+\usepackage{times,amsmath,graphicx,marvosym}
+\usepackage{multirow,array,colortbl,multimedia}
+
+\usepackage{tikz,multirow,array,colortbl,multimedia}
+\usetikzlibrary{arrows,shapes,decorations.shapes,shadows,calc}
+\usetikzlibrary{shapes.callouts, decorations.text}
+\usetikzlibrary{calc}
+
+\tikzstyle{flow}=[->, >=stealth', thick, shorten >=3pt, shorten <=3pt]
+
+
+
+\usepackage{pgf}
+
+% ----------------------
+%
+%\setLogoleft{\colorbox{white}{\includegraphics[height=1.5cm]{images/logoDG}}}
+
+%\logoleft{GaiaTrans}
+
+\include{pre}
+
+\title[DM Organisation]{DM organisation and reviews  }
+
+
+
+
+% ----------------------
+
+
+\AtBeginSection[]  % "Beamer, do the following at the start of every section"
+{
+\hspace*{10pt}
+\begin{frame}<beamer>
+\frametitle{Outline of the talk } % make a frame titled "Outline"
+\tableofcontents[currentsection]  % show TOC and highlight current section
+\end{frame}
+}
+
+
+\begin{document}
+
+\frame[plain]{\titlepage }
+\section{Introducion}
+\input{intro}
+\section{DM Organisation }
+\input{dmorg}
+\input{docs}
+\section {Milesones and Reviews }
+\input{replan}
+\input{conc}
+\frame[allowframebreaks]{\frametitle{ Acronyms }
+\vspace{10pt}
+\tiny
+\input{acronyms}
+}
+
+\frame{\frametitle{ References }
+\tiny
+\bibliographystyle{gaia_aa}
+\bibliography{lsst,gaia_livelink_valid,gaia_refs,gaia_books,gaia_refs_ads}
+\normalsize
+
+}
+\end{document}

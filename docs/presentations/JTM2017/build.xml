@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Latex build - wil ESAC 2007 -->
+
+<project name="pdflatex" default="pdf" basedir=".">
+<!-- SPECIFY DOC NAME HERE WITH NO EXTENSION -->
+    <property name="targ" value="ESA_OD_WOM_2016"/>
+    <property environment="env"/>
+<!-- SET THE VARIABLE DOCCOMMON IN YOUR ENVORONMENT BEFOR RUNNING THIS -->
+    <property name="doccommon" value="${env.DOCCOMMON}"/>
+
+ <!-- copy to your doc directory but change the target above  -->
+       <import file="${doccommon}/templates/build_tex.xml" /> 
+
+</project>
